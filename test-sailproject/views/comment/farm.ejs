@@ -1,0 +1,41 @@
+<DOCOTYPE html>
+<html>
+<head>
+	<title><%=farm %>owner</title> 
+	<h1><%= jumilar %>welcome to</h1>
+	<h2>welcome</h2>
+	 <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+<div>
+<h1><%= jumilar %>owner</h1>
+<h2>products</h2>
+<ul><%_each(farm, function(farm){%>
+<li>opick farm</li>
+<%})%>
+</ul>
+</div>
+<head>
+	<h1>opik</h1>
+	<p>black sabat</p>
+	<h1>formulir<h1>
+	<a href='/dataFarm'> sign up </a>
+<body>
+<p>form</p>
+<table border='1'>
+	<thead>
+		<th><%= email %></th>
+		<th><%= pasword %></th>
+	</thead>
+	><tbody align=center>
+		<% for(var i=0 i<farm.lenght;i++){ %>
+			<tr>
+				<td><%=create[i].email %></td>
+				<td><%=create[i].pasword %></td>
+			</tr>
+		<% } %>
+	</tbody align='center'>
+</table>
+<a href='/'>back</a>
+<a href='/'>sign</a>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>belajar</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= id %></h1>
+    <p>iyay <%= name %></p>
+	<h1><%= alamat %></h1>
+	<h1>form</h1>
+    <form name="form1" method="POST" action="/iyayController/save">
+    <table>
+        <tr>
+        <td>id</td>
+        <td><input type="text" name="id" ></td>
+        </tr>
+        <tr>
+        <td>name</td>
+        <td><input type="text" name="name" ></td>
+        </tr>
+        <tr>
+        <td>alamat</td>
+        <td><input type="text" name="alamat" ></td>
+        </tr>
+        <tr>
+        <td colspan="2"><input type="submit" value="Save" ></td>
+        </tr>
+    </table>
+    </form>
+  </body>
+</html>
